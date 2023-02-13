@@ -1,0 +1,25 @@
+name: Check-structure
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  HTML-validator:
+    name: HTML5 Validator
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: Cyb3r-Jak3/html5validator-action@v7.1.1
+        with:
+          root: .
+
+  HTML-proofer:
+    name: html-proof
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: chabad360/htmlproofer@master
+        with:
+          directory: .
+          arguments: --allow-missing-href --ignore-urls="/fonts.googleapis.com/,/fonts.gstatic.com/"
