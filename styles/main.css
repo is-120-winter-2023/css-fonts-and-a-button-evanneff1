@@ -134,3 +134,7 @@ a.button:hover {
 p.footer {
   margin: 0;
 }
+
+main {
+  max-width: fit-content;
+}
