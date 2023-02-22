@@ -143,3 +143,23 @@ body {
   font-family: "Hind", "Raleway", "sans-serif";
   color: var(--color-font);
 }
+
+.nav {
+  display: flex;
+  margin-bottom: 5vw;
+}
+.navbox {
+  margin: 0.5vw;
+}
+
+main h1 {
+  margin-top: 5vw;
+}
+
+main h2 {
+  margin-top: 5vw;
+}
+
+footer {
+  margin-top: 5vw;
+}
